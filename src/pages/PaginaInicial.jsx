@@ -9,7 +9,7 @@ import {
     listarPrioridades,
 } from "../services/chamadoService";
 
-const statusDisponiveis = ["aberto", "em andamento", "resolvido"];
+const statusDisponiveis = ["Aberto", "Em andamento", "Resolvido"];
 
 export default function PaginaInicial() {
     const [chamados, setChamados] = useState([]);
