@@ -3,9 +3,9 @@ import CardChamado from "./CardChamado";
 export default function ListaChamados(props) {
     const cards = [];
 
-    for (let i = 0; i < props.chamados.length; i++) {
-        cards.push(<CardChamado key={props.chamados[i].id} chamado={props.chamados[i]} />);
-    }
+    {props.chamados.map((chamado) => (
+        cards.push(<CardChamado key={chamado.id} chamado={chamado} />)
+    ))}
 
     return <div className="lista-chamados">{cards}</div>;
 }
